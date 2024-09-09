@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote e Compre - Nossos Cachorros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .description {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 180px;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery-item .description {
+            padding: 10px;
+            font-size: 14px;
+        }
+        .gallery-item button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .gallery-item button:hover {
+            background-color: #0056b3;
+        }
+        .petshop {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .petshop a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .petshop a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Adote e Compre - Nossos Cachorros</h1>
+    </div>
+    <div class="container">
+        <div class="description">
+            <p>Bem-vindo ao nosso site! Aqui você pode adotar cachorros de rua ou comprar cachorros de marca. Navegue pelas imagens abaixo para conhecer nossos cachorros disponíveis.</p>
+        </div>
+        <div class="gallery">
+            <!-- Exemplo de item -->
+            <div class="gallery-item">
+                <img src="dog1.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog1.html')">Mais Informações</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dog2.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog2.html')">Mais Informações</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dog3.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog3.html')">Mais Informações</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dog4.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog4.html')">Mais Informações</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dog5.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog5.html')">Mais Informações</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dog6.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog6.html')">Mais Informações</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dog7.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog7.html')">Mais Informações</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dog8.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog8.html')">Mais Informações</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dog9.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog9.html')">Mais Informações</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dog10.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog10.html')">Mais Informações</button>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dog11.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog11.html')">Mais Informações</button>
+                </div>
+            </div>
+             <div class="gallery-item">
+                <img src="dog12.jpg" alt="Cachorro 1">
+                <div class="description">
+                    <p>Nome: Rex</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Raça: SRD</p>
+                    <button onclick="showMoreInfo('dog12.html')">Mais Informações</button>
+                </div>
+            </div>
+            <!-- Repita para outras fotos -->
+        </div>
+        <div class="contact-info">
+            <p>Entre em contato para mais informações:</p>
+            <p>Telefone: (11) 98765-4321</p>
+        </div>
+        <div class="qr-code">
+            <p>Escaneie o QR Code abaixo para mais detalhes:</p>
+            <img src="qrcode.png" alt="QR Code">
+        </div>
+        <div class="petshop">
+            <h2>Petshop</h2>
+            <a href="https://www.exemplo-petshop.com" target="_blank">Visite o Petshop</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Adote e Compre - Todos os direitos reservados.</p>
+    </div>
+
+    <script>
+        function showMoreInfo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
