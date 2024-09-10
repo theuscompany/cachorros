@@ -75,6 +75,168 @@
         .petshop a:hover {
             text-decoration: underline;
         }
+        /* Estilos gerais para a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://th.bing.com/th/id/R.adf48a404cafc5252b7e3fd56afffd2b?rik=a8x8d%2fNnwnhjoA&pid=ImgRaw&r=0') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 123, 255, 0.9); /* Cor de fundo com transparência */
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Container principal com centralização e limite de largura */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Estilos da descrição */
+.description {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* Cor do texto branca */
+}
+
+/* Estilos da galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilos dos itens da galeria */
+.gallery-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 180px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item .description {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.gallery-item button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gallery-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para as informações de contato */
+.contact-info {
+    text-align: center;
+    margin: 40px 0;
+    color: #fff; /* Cor do texto branca */
+}
+
+/* Estilos para o QR Code */
+.qr-code {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Estilos para o petshop */
+.petshop {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.petshop a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.petshop a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Estilos adicionais para o rodapé do código fornecido */
+.rodape {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodape__logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.rodape__lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista__link {
+    margin: 10px 0;
+}
+
+.lista__link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lista__link a:hover {
+    text-decoration: underline;
+}
+
+.rodape__texto {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
     </style>
 </head>
 <body>
@@ -203,7 +365,9 @@
         </div>
         <div class="qr-code">
             <p>Escaneie o QR Code abaixo para mais detalhes:</p>
-            <img src="qrcode.png" alt="QR Code">
+           
+             <img style="height: 50%; width: 50%;"  src="WhatsApp Image 2024-09-10 at 15.29.06.jpeg" alt="QR Code">
+        
         </div>
         <div class="petshop">
             <h2>Petshop</h2>
@@ -214,6 +378,21 @@
     <div class="footer">
         <p>&copy; 2024 Adote e Compre - Todos os direitos reservados.</p>
     </div>
+
+    <footer class="rodape">
+        <img src="img/Logo.png" alt="Alura+" class="rodape__logo">
+        <ul class="rodape__lista">
+            <li class="lista__link"><a href="#">Idioma</a></li>
+            <li class="lista__link"><a href="#">Dispositivos compatíveis</a></li>
+            <li class="lista__link"><a href="#">Contrato de assinatura</a></li>
+            <li class="lista__link"><a href="#">Politica de privacidade</a></li>
+            <li class="lista__link"><a href="http://www.staggeringbeauty.com/">Site divertido</a></li>
+            <li class="lista__link"><a href="#">Anuncios personalizados</a></li>
+            <li class="lista__link"><a href="#">Ajuda</a></li>
+        </ul>
+        <p class="rodape__texto">® 2024 Stopify, Stopify LTDA. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+        <p class="rodape__texto">Stopify Deluxe é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Deluxe é comercializado por Stopify LTDA, Rua Xitãozinho e Xororó, 1999 - CALANGO SECO - BA, 77777-666, Brasil e CNPJ 48.195.537/1950-77</p>
+    </footer>
 
     <script>
         function showMoreInfo(page) {
